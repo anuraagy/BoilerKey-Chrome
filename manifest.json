@@ -1,7 +1,12 @@
 {
-    "name": "Boiler Key - In Browser",
-    "version": "1.0",
-    "permissions": ["storage"],
-    "description": "A chrome extension that gives you your boiler key code in browser",
-    "manifest_version": 2
+    "name": "Boiler Key - Chrome",
+    "version": "0.1",
+    "permissions": ["storage", "<all_urls>"],
+    "description": "A simple chrome extension that allows you to get your boilerkey passcode in browser",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_title": "BoilerKey - In Browser",
+        "default_popup": "dropdown.html"
+    },
+    "icons": { "128": "key.png" }
   }
