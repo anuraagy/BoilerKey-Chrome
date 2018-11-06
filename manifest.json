@@ -1,0 +1,7 @@
+{
+    "name": "Boiler Key - In Browser",
+    "version": "1.0",
+    "permissions": ["storage"],
+    "description": "A chrome extension that gives you your boiler key code in browser",
+    "manifest_version": 2
+  }
