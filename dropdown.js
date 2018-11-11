@@ -118,11 +118,15 @@ request.addEventListener("click", (e) => {
 })
 
 clear.addEventListener("click", (e) => {
-  BoilerKey.clearData();
-  hotpSecret = localStorage.getItem("key-hotp");
+  let confirmed = confirm("Are you sure you want to go through the entire setup process again?")
 
-  requestDiv.style.display = "none";
-  setupDiv.style.display = "block";
+  if(confirmed) {
+    BoilerKey.clearData();
+    hotpSecret = localStorage.getItem("key-hotp");
+
+    requestDiv.style.display = "none";
+    setupDiv.style.display = "block";
+  }
 })
 
 if(!hotpSecret) {
