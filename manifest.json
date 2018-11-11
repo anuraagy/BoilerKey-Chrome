@@ -1,6 +1,6 @@
 {
     "name": "BoilerKey - Chrome",
-    "version": "0.1",
+    "version": "1.0",
     "permissions": ["storage", "https://api-1b9bef70.duosecurity.com/*"],
     "description": "A simple chrome extension that allows you to get your boilerkey passcode in browser",
     "manifest_version": 2,
