@@ -4,9 +4,9 @@ body {
   width: 400px;
   margin: 0;
   padding: 10px 25px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif !important;
   padding-bottom: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   background: #fafafa;
 }
 
@@ -58,7 +58,7 @@ h1 {
  .request-button {
   font-family: "Open Sans", sans-serif;
   font-size: 0.8rem;
-  padding: 6px 10px;
+  padding: 10px 15px;
   background: #fbc531;
   border: none;
   border-radius: 2px;
@@ -69,6 +69,7 @@ h1 {
   position: absolute;
   top: 10px;
   right: 10px;
+  padding: 5px 10px;
   background: #fbc531;
   border: none;
   border-radius: 2px;

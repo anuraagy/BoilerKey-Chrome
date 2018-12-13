@@ -24,7 +24,15 @@ class BoilerKey {
     let codeElement = document.getElementById("code");
     codeElement.innerHTML = otp;
 
-    console.log("HOTP", otp);
+    document.oncopy = function(event) {
+      event.clipboardData.setData("text/plain", otp);
+      event.preventDefault();
+    };
+    document.execCommand("copy", false, null);
+
+    let notyf = new Notyf({delay:3000});
+    notyf.confirm("Copied to clipboard!");
+
   }
 
   static sendRequest(url) {
